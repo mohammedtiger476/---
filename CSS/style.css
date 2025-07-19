@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+      font-family: "Edu QLD Hand", cursive;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  color: white;
+  text-shadow: 0 0 5px black;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    background: linear-gradient(to bottom left, green,yellow);
+}
+.text p{
+    font-size: 40px;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+.btn button{
+    padding: 5px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 10px 10px 0 black;
+    background: linear-gradient(to bottom left, green,yellow);
+    color: white;
+    text-shadow: 0 0 5px black;
+    cursor: pointer;
+    transition: .5s;
+    position: relative;
+}
+.btn button:active{
+     box-shadow: 0 5px 10px black;
+}
+.modal{
+    position: absolute;
+    width: 400px ;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    background-color: rgba(0, 0, 0, 0.712);
+    border-radius: 15px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    backdrop-filter: blur(2px);
+    transition: .25s;
+}
+.day{
+    padding: 5px 100px;
+    border: none;
+    border-radius: 10px;
+    background:linear-gradient(to right,black,transparent,black);
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    transition: .25s;
+}
+.day:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+.close{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    color: white;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+
+}
+.days{
+     background:linear-gradient(to bottom left,green,yellow) ;
+     display: none;
+     flex-direction: column;
+     gap: 10px;
+     padding: 15px;
+     
+     
+}
+
+.ch{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: green;
+    border-radius: 5px;
+    box-shadow: 0 0 5px black;
+   
+
+}
+.right{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.back{
+    
+    width: 40px;
+   
+   cursor: pointer;
+   transition: .25s;
+    
+    
+}
+.back:active{
+    translate: -5px 0;
+}
+.back:hover{
+    scale: 1.1;
+}
